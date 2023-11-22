@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  
+    <!-- Link sa external CSS library para sa mga fonts ug icons nga nakita nako online -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+
+    /* style para sa whole page layout */
+    body {
+      margin: 0;
+      width: 100%;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background-image: url(background1.jpg); 
+      background-size: cover;
+      background-repeat: no-repeat;
+      border-radius: 5px;
+    }
+    
+      /* style para sa navigation bar (navbar) */
+      .navbar {
+        color: #1b1c37;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        border-radius: 15px;
+        margin: 5px;
+     }
+
+      .navbar a {
+        color: #ffffff;
+        margin: 0 20px;
+        font-weight: 600;
+        font-size: 25px;
+        padding: 8px 16px;
+        border-radius: 8px;
+        text-decoration: none;
+      }
+
+      .navbar a:hover {
+        color:#ffffff;
+        background-color: rgba(255, 255, 255, 0.493);
+        padding: 10px;
+      }
+
+      /* style para sa mga social icons sa navbar */
+      .social-icons {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .social-icon {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(90deg, #6bd0dd9a 0%, #0911fca1 100%);
+        border-radius: 50%;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        animation: glow 1s infinite;
+      }
+
+      @keyframes glow {
+        0% { box-shadow: 0 0 5px #25a4ce, 0 0 10px #ADD8E6, 0 0 15px #ADD8E6, 0 0 20px #ADD8E6; }
+        50% { box-shadow: 0 0 10px #FFFFFF, 0 0 20px #FFFFFF, 0 0 30px #FFFFFF, 0 0 40px #FFFFFF; }
+        100% { box-shadow: 0 0 5px #3cadd3, 0 0 10px #ADD8E6, 0 0 15px #ADD8E6, 0 0 20px #ADD8E6; }
+      }   
+
+      /* style para sa content section sa page */
+      .content {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+      }
+
+      .content img {
+        border-radius: 50%;
+        width: 500px;
+        height: 500px;
+        object-fit: cover;
+        margin: 50px;
+        margin-bottom: 5px;
+        animation: glow 1s infinite;
+      }
+
+      @keyframes glow {
+        0% { box-shadow: 0 0 5px #25a4ce, 0 0 10px #ADD8E6, 0 0 15px #ADD8E6, 0 0 20px #ADD8E6; }
+        50% { box-shadow: 0 0 10px #FFFFFF, 0 0 20px #FFFFFF, 0 0 30px #FFFFFF, 0 0 40px #FFFFFF; }
+        100% { box-shadow: 0 0 5px #3cadd3, 0 0 10px #ADD8E6, 0 0 15px #ADD8E6, 0 0 20px #ADD8E6; }
+      }
+
+      .content div {
+        text-align: center;
+      }
+
+      /* style para sa heading (h1) */
+      h1 {
+        font-size: 70px;
+        color: #ffffff;
+        line-height: 1.5;
+        text-align: center;
+        cursor: pointer;
+        transition: color 0.5s ease;
+        text-shadow: 2px 2px #000000;
+        margin: 5px;
+      }
+
+      h1:hover {
+        color: #1b1c37;
+        font-size: 75px;
+        text-shadow: 2px 2px #000000;
+      }
+    
+      /* style para sa about me section */
+      .about-me {
+        width: 100%;
+        max-width: 1600px;
+        margin: 0 auto;
+        padding: 20px;
+        color: #1b1c37;
+        text-align: center;
+        font-size: 64px;
+        font-weight: 600;
+        line-height: 67px;
+        word-wrap: break-word;
+      }
+
+      .about-me-text {
+        font-size: 30px;
+        font-weight: 300;
+        line-height: 1.05;
+        margin: 20px 0;
+      }
+    
+      /*Style sa footer section */
+      .footer {
+        background: #1b1c37;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        margin: 5px;
+        border-radius: 10px;
+      }
+    </style>  
+
+  </head>
+
+  <body>
+
+    <!-- Ang actual nga content sa webpage -->
+    <div class="container">
+
+      <!-- Navigation bar -->
+      <div class="navbar">
+        <div class="navbar">
+          <div class="left">
+       
+          </div>
+          <div class="right">
+
+            <!-- Mga links sa navigation bar -->
+            <a href="file:///C:/IT111/HTML%20main.html">Home</a>
+            <a href="file:///C:/IT111/HTML%20IT111%20Blog%20Entries.html">IT111 Blog Entries</a>
+            <a href="file:///C:/IT111/HTML%20Flex.html">Flex Page</a>
+            </div>
+          </div>
+      
+          <!-- Mga social icons sa navigation bar -->
+          <div class="social-icons">
+            <a href="https://instagram.com/pootchiii">
+              <div class="social-icon">
+                <i class="fab fa-instagram"></i>
+              </div>
+            </a>
+            <a href="https://www.facebook.com/lyle.biasalah">
+              <div class="social-icon">
+                <i class="fab fa-facebook"></i>
+              </div>
+            </a>
+            <a href="https://twitter.com/_lyyyyle">
+              <div class="social-icon">
+                <i class="fab fa-twitter"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="header"></div>
+    
+        <!-- Mga content sa webpage -->
+        <div class="content">
+          <div>
+
+              <!-- Heading sa content -->
+              <h1>IT111<br>FINAL<br>OUTPUT<br>PRESENTATION</h1>
+          </div>
+            <div>
+
+              <!-- Mga details sa user, ngalan ug picture nako -->
+              <img src="lyle1.jpg" alt="Lyle">
+              <p>Lyle Agreda</p>
+              <p class="student">STUDENT</p>
+          </div>
+        </div>
+      </hr>
+
+      <!-- Bag-ong background style para sa laing part sa page -->
+      <style>
+        .new-background {
+          background-color: #3cadd3;
+          background-size: cover;
+        }
+      </style>
+  
+      <!--mao na ni sya ang lower part tas na lahi na ang background diri-->
+      <div class="new-background">
+
+      <div class="about-me">About Me</div>
+      <!-- Mga social icons sa navigation bar --> 
+      <div class="social-icons">
+        <a href="https://instagram.com/pootchiii">
+          <div class="social-icon">
+            <i class="fab fa-instagram"></i>
+          </div>
+        </a>
+        <a href="https://www.facebook.com/lyle.biasalah">
+          <div class="social-icon">
+            <i class="fab fa-facebook"></i>
+          </div>
+        </a>
+        <a href="https://twitter.com/_lyyyyle">
+          <div class="social-icon">
+            <i class="fab fa-twitter"></i>
+          </div>
+        </a>
+      </div>
+
+      <h3 style="color: white; text-align: center; font-family: sans-serif; margin-top: 2%;">I am Lord Lyle Kimpert Agreda, 18 years old, residing in barangay Dalwangan, Malaybalay City.</h3>
+              
+        <h5 style="color: white; text-align: center;margin-top: 5%;">WATCH THE VIDEO BELOW!</h5>
+    
+        <!--Diri na part mo gamit ko ug inline CSS para dinako ma libog-->  
+        <div class="IT111 VID" style="text-align: center;">
+          <video src="bidyo.mp4" autoplay controls style="width: 900px; height: 600px; margin-bottom: 5%; padding: 20px; color: rgba(255, 254, 254, 0.292); box-shadow: 1px 5px 15px 10px;background-color: white;border-radius: 10px;">
+          </video>
+        </div>
+  
+        <!-- Footer section -->
+        <div class="footer">
+          &#169 Lord Lyle Kimpert Agreda 2023
+        </div>
+
+      </div>
+  
+    </div>
+
+  </body>
+</html>

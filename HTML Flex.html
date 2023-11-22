@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <!-- Link sa external CSS library para sa mga fonts ug icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+
+      /* style sa background ug font family sa page */
+      body {
+        background-image: url(background1.jpg);
+        background-size: cover;
+        font-family: 'Poppins', sans-serif;
+      }
+
+      /*style sa container sa page */
+      .container {
+        max-width: 1600px;
+        margin: 0 auto;
+        position: relative;
+      }
+
+      /* style sa navigation bar (navbar) */
+      .navbar {
+        color: #ffffff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        border-radius: 15px;
+        margin: 5px;
+      }
+
+      .navbar a {
+        color: #ffffff;
+        margin: 0 20px;
+        font-weight: 600;
+        font-size: 25px;
+        padding: 8px 16px;
+        border-radius: 8px;
+        text-decoration: none;
+      }
+
+      .navbar a:hover {
+        color:#ffffff;
+        background-color: rgba(255, 255, 255, 0.493);
+        padding: 10px;
+      }
+
+      /* style sa mga social icons sa navbar */
+      .social-icons {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .social-icon {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(90deg, #6bd0dd9a 0%, #0911fca1 100%);
+        border-radius: 50%;
+        font-size: 18px;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        animation: glow 1s infinite;
+      }
+
+      @keyframes glow {
+        0% { box-shadow: 0 0 5px #25a4ce, 0 0 10px #ADD8E6, 0 0 15px #ADD8E6, 0 0 20px #ADD8E6; }
+        50% { box-shadow: 0 0 10px #FFFFFF, 0 0 20px #FFFFFF, 0 0 30px #FFFFFF, 0 0 40px #FFFFFF; }
+        100% { box-shadow: 0 0 5px #3cadd3, 0 0 10px #ADD8E6, 0 0 15px #ADD8E6, 0 0 20px #ADD8E6; }
+      }
+
+      .social-icon:hover {
+        background: #ffffff3b;
+      }
+
+      /* style sa content section */
+      .content {
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background: rgba(255, 255, 255, 0.089);
+        border-radius: 15px;
+        text-align: center;
+        transition: background-color 0.3s;
+      }
+
+      .content-text {
+        font-size: 30px;
+        font-weight: 300;
+        line-height: 1.05;
+        text-align: center;
+      }
+
+      .content:hover {
+        background: linear-gradient(90deg, #c9abd694, #044c8698);
+        color: white;
+      }
+
+      /* style sa mga images sa content section */
+      img {
+        width: 900px;
+        height: 650px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        margin-top: 10%;
+        animation: glow 1s infinite;
+        float: center;
+      }
+    
+      @keyframes glow {
+        0% { box-shadow: 0 0 5px #25a4ce, 0 0 10px #ADD8E6, 0 0 15px #ADD8E6, 0 0 20px #ADD8E6; }
+        50% { box-shadow: 0 0 10px #FFFFFF, 0 0 20px #FFFFFF, 0 0 30px #FFFFFF, 0 0 40px #FFFFFF; }
+        100% { box-shadow: 0 0 5px #3cadd3, 0 0 10px #ADD8E6, 0 0 15px #ADD8E6, 0 0 20px #ADD8E6; }
+      }
+
+      /* style sa heading sa content section */
+      h3 {
+        text-transform: uppercase;
+        font-style: italic;
+        text-align: center;
+        margin-top: 3% ;
+        margin-bottom: -25% ;
+        color: rgb(245, 245, 245);
+        background-color: rgba(0, 0, 0, 0.548);
+        padding: 15px;
+        float: right;
+      }
+    
+      /* style sa footer section */
+      .footer {
+        background: #1b1c37;
+        color: white;
+        text-align: center;
+        padding: 13px;
+        margin: 5px;
+        margin-top: 400px;
+        clear: both;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Opening tag sa container div -->
+    <div class="container">
+
+      <!-- Navbar section -->
+      <div class="container">
+        <div class="navbar">
+
+            <!-- Navigation links -->
+            <div class="navigation">
+              <a href="file:///C:/IT111/HTML%20main.html">Home</a>
+              <a href="file:///C:/IT111/HTML%20IT111%20Blog%20Entries.html">IT111 Blog Entries</a>
+              <a href="file:///C:/IT111/HTML%20Flex.html">Flex Page</a>
+            </div>
+
+            <!-- Social icons -->
+            <div class="social-icons">
+                <a href="https://instagram.com/pootchiii">
+                    <div class="social-icon">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </a>
+                <a href="https://www.facebook.com/lyle.biasalah">
+                    <div class="social-icon">
+                        <i class="fab fa-facebook"></i>
+                    </div>
+                </a>
+                <a href="https://twitter.com/_lyyyyle">
+                    <div class="social-icon">
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+      </div>
+
+    <!-- Header para sa Blog Entries -->
+      <div style="text-align: center; text-transform: capitalize; font-size: 200%;"> 
+        <h1> FLEX PAGE </h1>
+      </div>
+
+      <!-- Message section -->
+      <div class="message">
+
+        <!-- Image -->
+        <img src="rhea.jpg" alt="rhea">  
+
+        <!-- Text content -->
+        <h3>I Just Wanna Flex This Girl Here In My Flex Page, and her name is Rhea Elexa. I wanna flex her Because She's My Number 1 Supporter Since Day 1.
+            She Really Motivates Me To Become Better Each Day, She Really Believes In Me And I'm Really Thankful That She Came To My Life And Even Treat Me Better 
+            More Than I Deserve. I just wanna say that i love her so much!
+        </h3>
+      </div>
+
+      <!-- Picture section -->
+      <div class="pic">
+
+        <!-- Image -->
+        <img src="tropa.jpg" alt="tropa">
+
+        <!-- Text content -->
+        <h3>I just also wanna flex these people because they are the one who also look up to me while doing this project. 
+            I just wanna thank them via flexing them here in my webpage.</h3>
+      </div>
+
+      <!-- Footer section -->
+      <div class="footer">
+        &#169 Lord Lyle Kimpert Agreda 2023
+      </div>
+
+    <!-- Closing tag sa container div -->
+    </div>
+  </body>
+
+</html>

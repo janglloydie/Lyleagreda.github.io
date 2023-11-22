@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  
+    <!-- Link sa external CSS library para sa mga fonts ug icons nga nakita nako online -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+
+    /* style sa kabuuang page layout */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background-image: url(background1.jpg); 
+      background-size: cover;
+      border-radius: 5px;
+    }
+
+    /* style sa container sa page */
+    .container {
+      max-width: 1600px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    /* style sa navigation bar (navbar) */
+    .navbar {
+      color: #ffffff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      border-radius: 15px;
+      margin: 5px;
+    }
+
+    .navbar a {
+      color: #ffffff;
+      margin: 0 20px;
+      font-weight: 600;
+      font-size: 25px;
+      padding: 8px 16px;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+
+    .navbar a:hover {
+      color:#ffffff;
+      background-color: rgba(255, 255, 255, 0.493);
+      padding: 10px;
+    }
+
+    /* style sa mga social icons sa navbar */
+    .social-icons {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .social-icon {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(90deg, #6bd0dd9a 0%, #0911fca1 100%);
+      border-radius: 50%;
+      font-size: 18px; 
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      animation: glow 1s infinite;
+    }
+
+    @keyframes glow {
+      0% { box-shadow: 0 0 5px #25a4ce, 0 0 10px #ADD8E6, 0 0 15px #ADD8E6, 0 0 20px #ADD8E6; }
+      50% { box-shadow: 0 0 10px #FFFFFF, 0 0 20px #FFFFFF, 0 0 30px #FFFFFF, 0 0 40px #FFFFFF; }
+      100% { box-shadow: 0 0 5px #3cadd3, 0 0 10px #ADD8E6, 0 0 15px #ADD8E6, 0 0 20px #ADD8E6; }
+    }
+
+    .social-icon:hover {
+      background: #ffffff3b;
+    }
+
+    /* style sa mga chapter boxes */
+    .chapter-box {
+      max-width: 917px;
+      margin: 0 auto;
+      padding: 20px;
+      border-radius: 70px;
+      font-weight: 300;
+      text-align: center;
+    }
+   
+    .chapter-box a {
+      text-decoration: none;
+      font-size: 40px; 
+      font-family: "Poppins", sans-serif;
+      font-weight: 500;
+      word-wrap: break-word;
+      display: block;
+      margin: 10px;
+      color: #1b1c37;
+    }
+
+    /* style sa footer section */
+    .footer {
+      background: #1b1c37;
+      color: white;
+      text-align: center;
+      padding: 13px;
+      margin: 5px;
+      clear: both;
+      border-radius: 10px;
+    }
+    </style>
+  </head>
+
+  <body>
+    <!-- Ang actual nga content sa webpage -->
+    <div class="container">
+      <!-- Navigation bar -->
+      <div class="navbar">
+        <div class="navigation">
+          <!-- Mga links sa navigation bar -->
+          <a href="file:///C:/IT111/HTML%20main.html">Home</a>
+          <a href="file:///C:/IT111/HTML%20IT111%20Blog%20Entries.html">IT111 Blog Entries</a>
+          <a href="file:///C:/IT111/HTML%20Flex.html">Flex Page</a>
+        </div>
+        <!-- Mga social icons sa navigation bar -->
+        <div class="social-icons">
+          <a href="https://instagram.com/pootchiii">
+            <div class="social-icon">
+              <i class="fab fa-instagram"></i>
+            </div>
+          </a>
+          <a href="https://www.facebook.com/lyle.biasalah">
+            <div class="social-icon">
+              <i class="fab fa-facebook"></i>
+            </div>
+          </a>
+          <a href="https://twitter.com/_lyyyyle">
+            <div class="social-icon">
+              <i class="fab fa-twitter"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header para sa Blog Entries -->
+    <div style="text-align: center; text-transform: capitalize; font-size: 200%;"> 
+      <h1> IT111 BLOG ENTRIES </h1>
+    </div>
+
+    <!-- Mga chapter boxes para sa mga blog entries -->
+    <div class="chapter-box" style="display: flex; justify-content:center">
+      <div>
+        <img src="mechanical era.jpg" alt="Image for Chapter 1" style="width: 500PX;height: 700px;">
+      </div>
+    </div>
+    <div class="chapter-box">
+      <a href="#" style="font-weight: bold;">CHAPTER 1: Computing</a>
+      <a style="font-size: 20px;"> The evolution of technology began with the Mechanical era (1642-1934) marked by mechanical inventions,
+      followed by the Vacuum tubes era (1935-1946) that introduced electronic devices, the Transistors era (1947-1962) 
+      that miniaturized electronics, the Integrated circuit era (1963-1972) that revolutionized computing with microchips, 
+      and the ongoing PC & VLSI era (1972-present) characterized by personal computers and billions of transistors on a single chip. </a>
+    </div>
+  
+    <div class="chapter-box" style="display: flex; justify-content:center">
+      <div>
+        <img src="chapter 2.jpg" alt="Image for Chapter 2" style="width:1200PX;height: 700px;">
+      </div>
+    </div>
+    <div class="chapter-box">
+      <a href="#" style="font-weight: bold;">CHAPTER 2: Professions and Careers in Computing</a>
+      <a style="font-size: 20px;"> Programming and Software Development, Information Systems Operation and Management, Telecommunications and Networking,
+      Web/Internet, Computer Science Research, Graphics and Multimedia, and Training and Support are all distinct yet
+      interconnected fields within the broad domain of Information Technology, each with its own specific focus and applications. </a>
+    </div>
+
+    <div class="chapter-box" style="display: flex; justify-content:center">
+      <div>
+        <img src="chapter 3.jpg" alt="Image for Chapter 3" style="width:1200PX;height: 700px;">
+      </div>
+    </div>
+    <div class="chapter-box">
+      <a href="#" style="font-weight: bold;">CHAPTER 3: Information Processing Cycle</a>
+      <a style="font-size: 20px;"> Data vs. Information refers to the distinction between raw, unprocessed facts (data) and processed, meaningful details (information),
+      while Data Processing is the conversion of this raw data into useful information through various steps. </a>
+    </div>
+
+    <div class="chapter-box" style="display: flex; justify-content:center">
+      <div>
+        <img src="chapter 4.jpg" alt="Image for Chapter 4" style="width:1200PX;height: 700px;">
+      </div>
+    </div>
+    <div class="chapter-box">
+      <a href="#" style="font-weight: bold;">CHAPTER 4: Introduction to Computer Systems</a>
+      <a style="font-size: 20px;"> The four main components of a computer system are the Input Unit, which converts user input into binary language, 
+      the Central Processing Unit (CPU), which processes the information, 
+      the Output Unit, which displays the results, and the Storage, which holds data and instructions. </a>
+    </div>
+
+    <div class="chapter-box">
+      <a href="#" style="font-weight: bold;">CHAPTER 5: Basic Concepts of Computer Security</a>
+      <a style="font-size: 20px;"> Cybercrimes are illegal activities conducted via the internet, with various types committed by different kinds of cyber criminals,
+      while cyber-attacks are malicious attempts to breach or exploit a system, 
+      and countermeasures are the defenses or actions taken to prevent or mitigate these attacks. </a>
+    </div>
+
+    <div class="chapter-box" style="display: flex; justify-content: center;">
+      <div>
+        <img src="SS.png" alt="Image for Chapter 4" style="width: 90%; height: auto;">
+        <img src="SS2.png" alt="Image for Chapter 4" style="width: 90%; height: auto;">
+      </div>
+    </div>
+  
+    <div class="chapter-box">
+      <a href="#" style="font-weight: bold; color: white;">LESSON THAT CHALLENGE ME THE MOST</a>
+      <a style="font-size: 20px; color: white;"> This is the Lesson that challenged me the most. Webpage development challenge me the most because it was hard compared to
+      the other lesson, my output here is just simple and I didn't put too much effects and make it simple to be presentable. </a>
+    </div>
+  
+    <!-- Footer section -->
+    <div class="footer">
+      &#169 Lord Lyle Kimpert Agreda 2023
+    </div>
+  </body>
+</html>
